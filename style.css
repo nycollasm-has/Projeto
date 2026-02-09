@@ -1,0 +1,186 @@
+body {
+  margin: 0;
+  background: #0b0b0f;
+  font-family: "Stmariethin";
+  color: white;
+}
+
+
+.page {
+  width: 1000px;
+  height: 560px;
+  margin: 30px auto;
+  display: flex;
+  border: 1px solid #222;
+  background: black;
+}
+
+.main {
+  flex: 1;
+  position: relative;
+  background-size: cover;
+  background-position: center;
+}
+
+
+.main.Rudo{ background-image: url("img/Rudo.png"); }
+
+.main.zoidy{ background-image: url("img/Zoidy.png");
+background-size: cover;
+background-position: center;}
+
+
+.main.lixeiros {
+  background-image: url("img/lixeiro.png");
+}
+
+.main.besta {
+  background-image: url("img/besta.png");
+}
+
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.55);
+  pointer-events: none;
+}
+
+
+.content {
+  position: relative;
+  padding: 30px;
+  height: 100%;
+  overflow: hidden;
+  max-width: 520px; 
+}
+
+
+.title {
+  margin: 0;
+  margin-left: 20px;
+  color: #ff1c1c;
+  font-size: 70px;
+  font-family: 'Bangers', Arial, sans-serif;
+  line-height: 1;
+}
+
+.subtitle {
+  margin: 0;
+  margin-left: 3.2em;
+  margin-top: 8px;
+  margin-bottom: 20px;
+  color: #ffee00;
+  font-size: 36px;
+  font-family: "Bangers", cursive;
+  line-height: 1;
+}
+
+
+.textBox {
+  background: rgba(0, 0, 0, 0.65);
+  padding: 12px 20px 20px 20px;
+  border-radius: 15px;
+  max-width: 345px;
+  margin-top: 18px;
+  border: 1px solid rgba(255, 255, 255, 0.15);
+}
+
+.textBox *:first-child {
+  margin-top: 0;
+}
+
+.textBox *:last-child {
+  margin-bottom: 0;
+}
+
+.desc {
+  max-width: 380px;
+  line-height: 1.6;
+  color: #eaeaea;
+  margin: 0;
+}
+
+.sectionTitle {
+  margin-top: 25px;
+  margin-bottom: 10px;
+  font-size: 18px;
+}
+
+.list {
+  margin-top: 0;
+  max-width: 420px;
+}
+
+
+.sidebar {
+  width: 130px;
+  background: #0f0f14;
+  border-left: 1px solid #222;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  gap: 16px;
+  align-items: center;
+  padding-top: 20px;
+  overflow: hidden;
+  position: relative;
+  z-index: 10; 
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+
+.sideItem:hover{
+  transform: scale(1.1);
+  box-shadow: 0 0 15px rgba(255,255,255,0.6); 
+}
+
+
+.sideItem {
+  width: 90px;
+  height: 90px;
+  border-radius: 50%;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: rgba(0, 0, 0, 0.4);
+}
+
+.sideItem img {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+}
+
+.sideLink {
+  display: flex;
+  width: 100%;
+  height: 100%;
+  align-items: center;
+  justify-content: center;
+}
+
+.form{
+  background: rgba(0,0,0,0.6);
+  padding: 10px;  
+  border-radius: 12px;
+  max-width: 300px;
+}
+
+.form label{
+  margin-top: 6px;
+  margin-bottom: 4px;
+}
+
+.form textarea{
+  height: 15px;
+  width: 170px;
+}
+
+.form button{
+  margin-top: 15px;
+}
